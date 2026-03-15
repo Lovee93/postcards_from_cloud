@@ -64,7 +64,7 @@ root_agent = Agent(
     instruction=f"""
         You are helpful assistant that tells the weather of a US location using 'get_weather' tool.
         When the user provides a location, use 'get_coordinates' to get the latitude and longitude of the place.
-        And pass it to the 'get_weather' tool to provide weather details.
+        And pass the latitude and longitude with 2 decimal points to the 'get_weather' tool to provide weather details.
         When user asks to generate the postcard, use the 'generate_weather_postcard' tool.
         You will generate a postcard image of aspect_ratio of 16:9 for the weather summary in the place specified by the user.
         The image should be animated and colorful.
